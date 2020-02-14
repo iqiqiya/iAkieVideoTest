@@ -34,5 +34,27 @@
             android:layout_alignLeft="@id/item_main_tv_name"
             android:text="不知名小码农"
             android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/item_main_iv_heart"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="1234"
+            android:textSize="12dp"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@mipmap/icon_heart"/>
+        <TextView
+            android:id="@+id/item_main_iv_reply"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/item_main_iv_heart"
+            android:layout_marginRight="10dp"
+            android:text="4567"
+            android:textSize="12dp"
+            android:layout_centerVertical="true"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@mipmap/icon_comment"/>
+
     </RelativeLayout>
 </LinearLayout>
