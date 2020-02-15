@@ -50,7 +50,7 @@ public class VideoAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
-        if (convertView==null) {
+        if (convertView == null) {
             convertView = LayoutInflater.from(context).inflate(R.layout.item_mainlv,parent,false);
             holder = new ViewHolder(convertView);
             convertView.setTag(holder);
@@ -64,7 +64,7 @@ public class VideoAdapter extends BaseAdapter {
         holder.nameTv.setText(author.getName());
         holder.descTv.setText(author.getDescription());
         String iconURL = author.getIcon();
-        if (TextUtils.isEmpty(iconURL)) {
+        if (!TextUtils.isEmpty(iconURL)) {
             Picasso.get().load(iconURL).into(holder.iconIv);
         }
 

@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/item_main_tv_name"
             android:layout_alignLeft="@id/item_main_tv_name"
+            android:layout_toLeftOf="@+id/item_main_tv_reply"
             android:text="不知名小码农"
             android:textSize="10sp"/>
         <TextView
